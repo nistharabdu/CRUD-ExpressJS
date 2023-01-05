@@ -1,0 +1,24 @@
+{
+  "name": "crud-expressjs",
+  "version": "1.0.0",
+  "description": "CRUD Application with ExpressJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:CSS": "npx tailwindcss -i public_html/css/tailwind.css -o public_html/css/style.css --watch",
+    "build:css": "postcss public_html/css/tailwind.css -o public_html/css/style.css --watch",
+    "start": "node server.js",
+    "dev": "npx nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
